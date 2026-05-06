@@ -23,5 +23,836 @@
 <header><div class="wrap hero"><div class="card"><h1>Battle. Vote. Rank.<br>Built for Logic Pro.</h1><p>Beat-battle style competition platform with weekly challenges, loop packs, and community voting.</p><p><a class="btn primary" href="battles.html">Join Current Battle</a> <a class="btn" href="submit.html">Submit Entry</a></p><div class="stats"><div class="stat"><strong>1,284</strong><br><small>Votes this round</small></div><div class="stat"><strong>342</strong><br><small>Active producers</small></div><div class="stat"><strong>24</strong><br><small>Hours left</small></div></div></div><div class="card"><h2>Current Battle: Soul Flip #42</h2><p>Download the official loop pack, produce in Logic Pro, and upload your bounce + project package before deadline.</p><ul><li>Pack: soul_flip_42.zip</li><li>Format: WAV 24-bit + .logicx/.zip</li><li>Deadline: May 20, 2026</li></ul><a class="btn" href="battle-detail.html">View Battle Details</a></div></div></header>
 <section><div class="wrap grid"><article class="card"><h2>How Battles Work</h2><p>1) Download same loops<br>2) Produce in Logic Pro<br>3) Submit files<br>4) Community vote</p></article><article class="card"><h2>Head-to-Head Voting</h2><p>Compare Producer A vs Producer B with quick switching and fair same-loop judging.</p></article><article class="card"><h2>Season Rankings</h2><p>Points, wins, and consistency update after each completed battle.</p></article><article class="card"><h2>Logic Compatibility</h2><p>Project files are required to be Logic compatible to keep workflows consistent.</p></article></div></section>
 <footer><div class="wrap">Logic Battle — beat-battle style experience adapted for Logic Pro creators.</div></footer>
+<!doctype html><html lang="en"><head><meta charset="UTF-8"><meta name="viewport" content="width=device-width,initial-scale=1"><title>Logic Battle — Home</title><link rel="preconnect" href="https://fonts.googleapis.com"><link rel="preconnect" href="https://fonts.gstatic.com" crossorigin><link href="https://fonts.googleapis.com/css2?family=Space+Grotesk:wght@400;500;700&family=Bebas+Neue&display=swap" rel="stylesheet"><style>
+:root{--bg:#0b0f16;--panel:#121826;--line:#243049;--text:#eef3ff;--muted:#a8b5d1;--lime:#b7ff3c;--cyan:#62e8ff}
+*{box-sizing:border-box}body{margin:0;font-family:"Space Grotesk",sans-serif;background:linear-gradient(180deg,#090d14,#0f1522);color:var(--text)}
+a{text-decoration:none;color:inherit}.wrap{width:min(100% - 32px,1180px);margin:auto}
+nav{position:sticky;top:0;background:rgba(9,13,20,.85);backdrop-filter:blur(10px);border-bottom:1px solid var(--line);z-index:20}
+.nav{display:flex;justify-content:space-between;align-items:center;padding:14px 0;gap:12px}.links{display:flex;gap:12px;flex-wrap:wrap}
+.badge{padding:8px 12px;border-radius:999px;border:1px solid var(--line);background:#131c2c;color:var(--muted)}
+.btn{padding:12px 16px;border-radius:999px;border:1px solid var(--line);display:inline-block;background:#162034}
+.btn.primary{background:linear-gradient(135deg,var(--lime),#d7ff92);color:#0d1207;border:none;font-weight:700}
+header{padding:48px 0 22px}h1,h2,h3{font-family:"Bebas Neue",cursive;letter-spacing:.03em;margin:0 0 8px}
+h1{font-size:clamp(2.4rem,7vw,5rem)}h2{font-size:clamp(1.8rem,4vw,3rem)}
+.muted{color:var(--muted)}section{padding:20px 0 36px}.grid{display:grid;gap:16px;grid-template-columns:repeat(auto-fit,minmax(250px,1fr))}
+.card{background:linear-gradient(180deg,#131c2d,#111929);border:1px solid var(--line);padding:18px;border-radius:18px}
+.table{width:100%;border-collapse:collapse}.table th,.table td{padding:10px;border-bottom:1px solid var(--line);text-align:left}
+input,select,textarea{width:100%;padding:12px;border-radius:12px;border:1px solid var(--line);background:#0b1220;color:#fff}
+footer{padding:26px 0;color:var(--muted);border-top:1px solid var(--line);margin-top:18px}
+</style></head><body><nav><div class="wrap nav"><strong>Logic Battle</strong><div class="links"><a href="index.html">Home</a><a href="battles.html">Battles</a><a href="battle-detail.html">Battle Detail</a><a href="submit.html">Submit</a><a href="leaderboard.html">Leaderboard</a><a href="profiles.html">Producers</a><a href="about.html">About</a></div></div></nav><header><div class="wrap"><h1>Logic Pro Beat Battles, Weekly</h1><p class="muted">Battle structure modeled after beat-battle flow with Logic Pro submission standards.</p></div></header><section><div class="wrap grid"><article class="card"><h2>Current Battle: Soul Flip #42</h2><p class="muted">All participants use the same official loop pack.</p><p><a class="btn primary" href="battle-detail.html">Enter This Battle</a></p></article><article class="card"><h2>How it works</h2><ol><li>Download official loop pack</li><li>Produce in Logic Pro</li><li>Upload bounce + project package</li><li>Community voting + ranking</li></ol></article><article class="card"><h2>Logic Compatibility Rules</h2><p class="badge">Required: .logicx or Logic Project Package (.zip)</p><p class="badge">Audio: 24-bit WAV, 44.1kHz or 48kHz</p><p class="badge">Include plugin print or stems for third-party instruments</p></article></div></section><section><div class="wrap card"><h2>Platform Sections</h2><div class="grid"><a class="btn" href="battles.html">Browse battles</a><a class="btn" href="submit.html">Submit entry</a><a class="btn" href="leaderboard.html">View leaderboard</a><a class="btn" href="profiles.html">Producer profiles</a></div></div></section><footer><div class="wrap">Logic Battle prototype modeled after beat-battle flow, adapted for Logic Pro-compatible submissions.</div></footer></body></html>
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>Logic Battle — Prompt Upgrade</title>
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=Space+Grotesk:wght@400;500;700&family=Bebas+Neue&display=swap" rel="stylesheet">
+  <style>
+    :root{
+      --bg:#0c0f14;
+      --bg-2:#11151d;
+      --panel:rgba(255,255,255,.06);
+      --panel-strong:rgba(255,255,255,.09);
+      --line:rgba(255,255,255,.12);
+      --text:#f5f7fb;
+      --muted:#aab3c5;
+      --lime:#b7ff3c;
+      --cyan:#62e8ff;
+      --orange:#ff8c42;
+      --shadow:0 20px 60px rgba(0,0,0,.35);
+      --radius:24px;
+      --max:1200px;
+    }
+
+    *{box-sizing:border-box}
+    html{scroll-behavior:smooth}
+    body{
+      margin:0;
+      font-family:"Space Grotesk", sans-serif;
+      background:
+        radial-gradient(circle at 20% 10%, rgba(98,232,255,.12), transparent 30%),
+        radial-gradient(circle at 80% 20%, rgba(183,255,60,.10), transparent 28%),
+        linear-gradient(180deg, #0b0e13 0%, #0f131a 100%);
+      color:var(--text);
+      min-height:100vh;
+      overflow-x:hidden;
+    }
+
+    body::before{
+      content:"";
+      position:fixed;
+      inset:0;
+      pointer-events:none;
+      background:
+        linear-gradient(rgba(255,255,255,.03) 1px, transparent 1px),
+        linear-gradient(90deg, rgba(255,255,255,.03) 1px, transparent 1px);
+      background-size:32px 32px;
+      mask-image:linear-gradient(to bottom, rgba(0,0,0,.8), transparent 85%);
+      opacity:.5;
+    }
+
+    a{color:inherit;text-decoration:none}
+    img{max-width:100%}
+
+    .wrap{width:min(100% - 32px, var(--max)); margin-inline:auto}
+
+    .reveal{
+      opacity:0;
+      transform:translateY(24px);
+      transition:opacity .8s ease, transform .8s ease;
+    }
+    .reveal.visible{
+      opacity:1;
+      transform:translateY(0);
+    }
+
+    .stagger-1{animation-delay:.1s}
+    .stagger-2{animation-delay:.2s}
+    .stagger-3{animation-delay:.3s}
+    .stagger-4{animation-delay:.4s}
+
+    nav{
+      position:sticky;
+      top:0;
+      z-index:20;
+      backdrop-filter:blur(16px);
+      background:rgba(12,15,20,.55);
+      border-bottom:1px solid rgba(255,255,255,.08);
+    }
+
+    .nav-inner{
+      display:flex;
+      align-items:center;
+      justify-content:space-between;
+      gap:20px;
+      padding:16px 0;
+    }
+
+    .brand{
+      display:flex;
+      align-items:center;
+      gap:12px;
+      font-weight:700;
+      letter-spacing:.02em;
+    }
+
+    .brand-mark{
+      width:42px;
+      height:42px;
+      border-radius:14px;
+      position:relative;
+      background:
+        linear-gradient(135deg, var(--lime), var(--cyan));
+      box-shadow:0 0 0 1px rgba(255,255,255,.12) inset, 0 10px 30px rgba(98,232,255,.18);
+      overflow:hidden;
+    }
+
+    .brand-mark::before,
+    .brand-mark::after{
+      content:"";
+      position:absolute;
+      inset:8px;
+      border:2px solid rgba(12,15,20,.7);
+      border-top:none;
+      border-bottom:none;
+    }
+
+    .brand-mark::after{
+      inset:12px 18px;
+      background:#0c0f14;
+      border:none;
+      border-radius:6px;
+    }
+
+    .nav-links{
+      display:none;
+      gap:24px;
+      color:var(--muted);
+      font-size:.95rem;
+    }
+
+    .nav-links a:hover{color:var(--text)}
+
+    .nav-cta{
+      display:flex;
+      align-items:center;
+      gap:12px;
+    }
+
+    .btn{
+      border:none;
+      cursor:pointer;
+      font:inherit;
+      border-radius:999px;
+      padding:14px 20px;
+      transition:transform .2s ease, box-shadow .25s ease, background .25s ease, color .25s ease;
+      display:inline-flex;
+      align-items:center;
+      justify-content:center;
+      gap:10px;
+    }
+
+    .btn:active{transform:scale(.98)}
+
+    .btn-primary{
+      background:linear-gradient(135deg, var(--lime), #d6ff87);
+      color:#0b0e13;
+      box-shadow:0 12px 30px rgba(183,255,60,.25);
+      font-weight:700;
+    }
+
+    .btn-primary:hover{
+      transform:translateY(-2px);
+      box-shadow:0 20px 34px rgba(183,255,60,.32);
+    }
+
+    .btn-secondary{
+      background:rgba(255,255,255,.06);
+      color:var(--text);
+      border:1px solid rgba(255,255,255,.12);
+      backdrop-filter:blur(10px);
+    }
+
+    .btn-secondary:hover{
+      background:rgba(255,255,255,.10);
+      transform:translateY(-2px);
+    }
+
+    header.hero{
+      padding:56px 0 40px;
+    }
+
+    .hero-grid{
+      display:grid;
+      grid-template-columns:1fr;
+      gap:28px;
+      align-items:end;
+    }
+
+    .eyebrow{
+      display:inline-flex;
+      align-items:center;
+      gap:10px;
+      color:var(--lime);
+      font-size:.84rem;
+      text-transform:uppercase;
+      letter-spacing:.16em;
+      margin-bottom:18px;
+    }
+
+    .eyebrow::before{
+      content:"";
+      width:36px;
+      height:1px;
+      background:currentColor;
+    }
+
+    h1, h2, h3{
+      font-family:"Bebas Neue", cursive;
+      line-height:.95;
+      letter-spacing:.02em;
+      margin:0;
+    }
+
+    h1{
+      font-size:clamp(4rem, 13vw, 8.6rem);
+      max-width:10ch;
+    }
+
+    .hero-copy p{
+      color:var(--muted);
+      font-size:clamp(1rem, 2vw, 1.15rem);
+      line-height:1.75;
+      max-width:62ch;
+      margin:18px 0 28px;
+    }
+
+    .hero-actions{
+      display:flex;
+      flex-wrap:wrap;
+      gap:14px;
+      margin-bottom:26px;
+    }
+
+    .hero-meta{
+      display:flex;
+      flex-wrap:wrap;
+      gap:12px;
+      color:var(--muted);
+      font-size:.95rem;
+    }
+
+    .hero-meta span{
+      padding:10px 14px;
+      border-radius:999px;
+      background:rgba(255,255,255,.04);
+      border:1px solid rgba(255,255,255,.08);
+    }
+
+    .hero-stage{
+      position:relative;
+      min-height:420px;
+      border-radius:32px;
+      overflow:hidden;
+      background:
+        radial-gradient(circle at 30% 30%, rgba(98,232,255,.22), transparent 25%),
+        radial-gradient(circle at 70% 40%, rgba(255,140,66,.18), transparent 26%),
+        linear-gradient(145deg, rgba(255,255,255,.07), rgba(255,255,255,.03));
+      border:1px solid rgba(255,255,255,.12);
+      box-shadow:var(--shadow);
+      backdrop-filter:blur(10px);
+    }
+
+    .hero-stage::before{
+      content:"";
+      position:absolute;
+      inset:0;
+      background:
+        repeating-linear-gradient(
+          90deg,
+          transparent 0 54px,
+          rgba(255,255,255,.05) 54px 55px
+        ),
+        linear-gradient(180deg, transparent, rgba(0,0,0,.22));
+      opacity:.55;
+    }
+
+    .timeline{
+      position:absolute;
+      left:6%;
+      right:6%;
+      bottom:16%;
+      height:160px;
+      border-radius:24px;
+      background:rgba(10,12,16,.55);
+      border:1px solid rgba(255,255,255,.12);
+      overflow:hidden;
+      box-shadow:0 20px 50px rgba(0,0,0,.28);
+    }
+
+    .timeline .playhead{
+      position:absolute;
+      top:0;
+      bottom:0;
+      left:58%;
+      width:2px;
+      background:linear-gradient(to bottom, transparent, var(--lime), transparent);
+      box-shadow:0 0 20px rgba(183,255,60,.55);
+    }
+
+    .lane{
+      position:absolute;
+      left:18px;
+      right:18px;
+      height:22px;
+      border-radius:8px;
+      background:rgba(255,255,255,.04);
+      overflow:hidden;
+    }
+
+    .lane::before{
+      content:"";
+      position:absolute;
+      inset:3px auto 3px 0;
+      width:var(--w,50%);
+      border-radius:6px;
+      background:var(--c, var(--cyan));
+      opacity:.88;
+      box-shadow:0 0 18px color-mix(in srgb, var(--c) 55%, transparent);
+    }
+
+    .lane:nth-child(1){top:18px; --w:68%; --c:var(--cyan)}
+    .lane:nth-child(2){top:52px; --w:42%; --c:#7f9cff}
+    .lane:nth-child(3){top:86px; --w:84%; --c:var(--lime)}
+    .lane:nth-child(4){top:120px; --w:56%; --c:var(--orange)}
+
+    .stage-label{
+      position:absolute;
+      top:22px;
+      left:22px;
+      right:22px;
+      display:flex;
+      justify-content:space-between;
+      align-items:flex-start;
+      gap:20px;
+    }
+
+    .chip{
+      padding:10px 14px;
+      border-radius:999px;
+      background:rgba(255,255,255,.08);
+      border:1px solid rgba(255,255,255,.12);
+      color:var(--text);
+      font-size:.85rem;
+    }
+
+    .score{
+      position:absolute;
+      top:28%;
+      right:7%;
+      padding:18px 20px;
+      border-radius:22px;
+      background:rgba(12,15,20,.72);
+      border:1px solid rgba(255,255,255,.12);
+      backdrop-filter:blur(12px);
+      min-width:170px;
+    }
+
+    .score strong{
+      display:block;
+      font-size:2rem;
+      color:var(--lime);
+      line-height:1;
+      margin-top:8px;
+    }
+
+    section{
+      padding:32px 0 72px;
+    }
+
+    .section-head{
+      display:grid;
+      grid-template-columns:1fr;
+      gap:14px;
+      align-items:end;
+      margin-bottom:28px;
+    }
+
+    .section-head p{
+      color:var(--muted);
+      max-width:62ch;
+      line-height:1.75;
+      margin:0;
+    }
+
+    .feature-rail{
+      display:grid;
+      grid-template-columns:1fr;
+      gap:16px;
+    }
+
+    .feature{
+      display:grid;
+      grid-template-columns:1fr;
+      gap:18px;
+      padding:24px;
+      border-radius:28px;
+      background:linear-gradient(180deg, rgba(255,255,255,.06), rgba(255,255,255,.03));
+      border:1px solid rgba(255,255,255,.10);
+      box-shadow:var(--shadow);
+      overflow:hidden;
+      position:relative;
+    }
+
+    .feature::after{
+      content:"";
+      position:absolute;
+      inset:auto -10% -40% auto;
+      width:220px;
+      height:220px;
+      border-radius:50%;
+      background:radial-gradient(circle, rgba(98,232,255,.16), transparent 65%);
+      pointer-events:none;
+    }
+
+    .feature-num{
+      font-family:"Bebas Neue", cursive;
+      font-size:1.1rem;
+      color:var(--lime);
+      letter-spacing:.12em;
+    }
+
+    .feature h3{
+      font-size:clamp(2rem, 5vw, 3rem);
+    }
+
+    .feature p{
+      color:var(--muted);
+      line-height:1.8;
+      margin:0;
+    }
+
+    .mini-visual{
+      min-height:150px;
+      border-radius:20px;
+      background:
+        linear-gradient(135deg, rgba(255,255,255,.06), rgba(255,255,255,.02)),
+        radial-gradient(circle at 30% 30%, rgba(183,255,60,.18), transparent 24%),
+        radial-gradient(circle at 70% 70%, rgba(98,232,255,.14), transparent 24%);
+      border:1px solid rgba(255,255,255,.10);
+      position:relative;
+      overflow:hidden;
+    }
+
+    .mini-visual::before,
+    .mini-visual::after{
+      content:"";
+      position:absolute;
+      inset:auto;
+      background:rgba(255,255,255,.08);
+      border-radius:999px;
+    }
+
+    .mini-visual::before{
+      left:16px;
+      right:16px;
+      bottom:26px;
+      height:10px;
+      box-shadow:
+        0 -24px 0 rgba(255,255,255,.07),
+        0 -48px 0 rgba(255,255,255,.06);
+    }
+
+    .mini-visual::after{
+      width:64px;
+      height:64px;
+      right:18px;
+      top:18px;
+      background:linear-gradient(135deg, var(--lime), var(--cyan));
+      opacity:.9;
+    }
+
+    .prompt-section{
+      padding-top:16px;
+    }
+
+    .prompt-box{
+      display:grid;
+      grid-template-columns:1fr;
+      gap:18px;
+      background:linear-gradient(180deg, rgba(255,255,255,.07), rgba(255,255,255,.04));
+      border:1px solid rgba(255,255,255,.12);
+      border-radius:30px;
+      padding:24px;
+      box-shadow:var(--shadow);
+    }
+
+    .prompt-box textarea{
+      width:100%;
+      min-height:340px;
+      resize:vertical;
+      border:none;
+      outline:none;
+      background:#0a0d12;
+      color:var(--text);
+      border-radius:22px;
+      padding:22px;
+      font:500 0.98rem/1.7 "Space Grotesk", sans-serif;
+      border:1px solid rgba(255,255,255,.1);
+    }
+
+    .prompt-tools{
+      display:flex;
+      flex-wrap:wrap;
+      gap:12px;
+      align-items:center;
+      justify-content:space-between;
+    }
+
+    .prompt-note{
+      color:var(--muted);
+      font-size:.95rem;
+    }
+
+    .footer{
+      padding:32px 0 44px;
+      color:var(--muted);
+      border-top:1px solid rgba(255,255,255,.08);
+      margin-top:24px;
+    }
+
+    .footer strong{color:var(--text)}
+
+    @media (min-width: 820px){
+      .nav-links{display:flex}
+      .hero-grid{
+        grid-template-columns:1.05fr .95fr;
+        gap:34px;
+      }
+      .section-head{
+        grid-template-columns:.9fr 1.1fr;
+      }
+      .feature{
+        grid-template-columns:1.1fr .9fr;
+        align-items:center;
+        padding:28px;
+      }
+      .prompt-box{
+        padding:30px;
+      }
+    }
+  </style>
+</head>
+<body>
+  <nav aria-label="Main navigation">
+    <div class="wrap nav-inner">
+      <a href="#" class="brand" aria-label="Logic Battle home">
+        <span class="brand-mark" aria-hidden="true"></span>
+        <span>Logic Battle</span>
+      </a>
+
+      <div class="nav-links">
+        <a href="index.html#concept">Concept</a>
+        <a href="battles.html">Battles</a>
+        <a href="leaderboard.html">Leaderboard</a>
+        <a href="submit.html">Submit</a>
+        <a href="about.html">About</a>
+      </div>
+
+      <div class="nav-cta">
+        <a class="btn btn-secondary" href="submit.html">Submit Beat</a>
+        <a href="#concept">Concept</a>
+        <a href="#features">Features</a>
+        <a href="#loops">Loop Battles</a>
+        <a href="#prompt">Better Prompt</a>
+      </div>
+
+      <div class="nav-cta">
+        <a class="btn btn-secondary" href="#prompt">Refine Prompt</a>
+      </div>
+    </div>
+  </nav>
+
+  <header class="hero">
+    <div class="wrap hero-grid">
+      <div class="hero-copy reveal">
+        <div class="eyebrow">Logic Pro producers only</div>
+        <h1>Build the Logic Pro version of Beat Battle</h1>
+        <p>
+          You asked for an equivalent to beat-battle.net but tailored for Logic Pro users. To get a much stronger result from an AI website builder or developer, the prompt should clearly define the audience, core features, shared-loop fairness, upload flow, layout, aesthetic, and platform-specific identity.
+        </p>
+        <div class="hero-actions">
+          <a href="#prompt" class="btn btn-primary">Get the improved prompt</a>
+          <button class="btn btn-secondary" id="copyTop">Copy prompt</button>
+        </div>
+        <div class="hero-meta" aria-label="Project tags">
+          <span>Music producer platform</span>
+          <span>Logic Pro branding</span>
+          <span>Beat battles & submissions</span>
+        </div>
+      </div>
+
+      <div class="hero-stage reveal">
+        <div class="stage-label">
+          <span class="chip">Weekly challenge: Soul Flip</span>
+          <span class="chip">DAW: Logic Pro</span>
+        </div>
+
+        <div class="score">
+          Round Status
+          <strong>1,284</strong>
+          <div style="color:var(--muted); margin-top:6px; font-size:.92rem;">votes in the current battle</div>
+        </div>
+
+        <div class="timeline" aria-hidden="true">
+          <div class="playhead"></div>
+          <div class="lane"></div>
+          <div class="lane"></div>
+          <div class="lane"></div>
+          <div class="lane"></div>
+        </div>
+      </div>
+    </div>
+  </header>
+
+  <main>
+    <section id="concept">
+      <div class="wrap">
+        <div class="section-head reveal">
+          <h2>What your prompt should communicate</h2>
+          <p>
+            Instead of saying only “make me something like beat-battle.net for Logic Pro users,” you should describe the product as a competitive community platform for Logic Pro producers where users join beat battles, upload entries, vote on tracks, browse rankings, and feel like they’re inside a modern creative music environment.
+          </p>
+        </div>
+
+        <div class="feature-rail">
+          <article class="feature reveal" id="features">
+            <div>
+              <div class="feature-num">01 / POSITIONING</div>
+              <h3>Make the audience and purpose unmistakable</h3>
+              <p>
+                State that the site is specifically for Logic Pro beatmakers and producers. Mention that it should support battle discovery, challenge participation, submission deadlines, leaderboards, voting, and community credibility. This instantly moves the request from vague inspiration to product direction.
+              </p>
+            </div>
+            <div class="mini-visual" aria-hidden="true"></div>
+          </article>
+
+          <article class="feature reveal">
+            <div>
+              <div class="feature-num">02 / VISUAL DIRECTION</div>
+              <h3>Ask for a Logic-friendly music production aesthetic</h3>
+              <p>
+                Since Logic Pro has a sleek, pro-studio feel, the design should feel premium, rhythmic, modern, and software-inspired. Think dark interface, sharp typography, timeline motifs, mixer-like dividers, waveform visuals, and neon-lime or cyan accents rather than a generic startup layout.
+              </p>
+            </div>
+            <div class="mini-visual" aria-hidden="true"></div>
+          </article>
+
+          <article class="feature reveal">
+            <div>
+              <div class="feature-num">03 / CORE PAGES</div>
+              <h3>Specify the sections you actually want</h3>
+              <p>
+                Ask for a homepage with hero banner, current battle spotlight, submission CTA, featured producers, voting section, leaderboard, and FAQ. If you want more than a landing page, say you also need battle detail pages, producer profiles, upload flow, and community ranking views.
+              </p>
+            </div>
+            <div class="mini-visual" aria-hidden="true"></div>
+          </article>
+        </div>
+      </div>
+    </section>
+
+
+    <section id="loops">
+      <div class="wrap">
+        <div class="section-head reveal">
+          <h2>Shared loop battles that are fair</h2>
+          <p>
+            Every battle should provide the exact same official loop pack to every producer. Competitors download identical loops, build their beat in Logic Pro, then upload their final Logic project export and bounce so voters can compare skill, creativity, and mix choices on equal source material.
+          </p>
+        </div>
+
+        <div class="feature-rail">
+          <article class="feature reveal">
+            <div>
+              <div class="feature-num">04 / LOOP PACK FLOW</div>
+              <h3>Download the same loops, then build in Logic</h3>
+              <p>
+                Each challenge includes a locked starter pack (stems, one-shots, and BPM/key notes). Users click to download the official zip, produce inside Logic Pro, and return before deadline with a stereo bounce plus project package for transparent judging.
+              </p>
+            </div>
+            <div class="mini-visual" aria-hidden="true"></div>
+          </article>
+
+          <article class="feature reveal">
+            <div>
+              <div class="feature-num">05 / HEAD-TO-HEAD COMPARE</div>
+              <h3>Battle side-by-side with synchronized playback</h3>
+              <p>
+                The battle page should support A/B comparison between two producers using the same loop kit. Show waveform previews, quick switch controls, vote buttons, and upload verification badges so the audience knows both entries were created from the identical official source loops.
+              </p>
+            </div>
+            <div class="mini-visual" aria-hidden="true"></div>
+          </article>
+        </div>
+      </div>
+    </section>
+
+    <section class="prompt-section" id="prompt">
+      <div class="wrap">
+        <div class="section-head reveal">
+          <h2>Better prompt</h2>
+          <p>
+            Here’s a cleaner, more detailed version of your request that should produce a much better result.
+          </p>
+        </div>
+
+        <div class="prompt-box reveal">
+          <textarea id="promptText" aria-label="Improved prompt text">Create a complete, modern website similar in purpose to beat-battle.net, but built specifically for Logic Pro users and producers.
+
+The website should be a music battle platform where Logic Pro beatmakers can:
+- join weekly or monthly beat battles with shared official loop packs
+- download the same loops as every other competitor
+- upload their beat submissions (bounce + Logic project package)
+- vote on other entries
+- view rankings and leaderboards
+- discover featured battles and winners
+- build a competitive producer community around Logic Pro
+
+Design direction:
+- make the visual style feel inspired by professional music production software and modern beat culture
+- use a sleek, dark, premium interface with bold typography, strong contrast, and vibrant accent colors like neon green, cyan, or electric orange
+- include subtle UI references to Logic Pro such as timeline-inspired dividers, waveform patterns, mixer-style layouts, transport-bar details, or audio interface styling
+- the site should feel energetic, competitive, and polished, not like a generic SaaS landing page
+
+Homepage structure:
+- hero section with a strong headline, short supporting copy, and call-to-action buttons like “Join the Battle” and “Submit Your Beat”
+- featured/current beat battle section with countdown, theme, entry count, prize information, and official loop-pack download button
+- how it works section explaining battle entry, submission, voting, and winner selection
+- community leaderboard section for top Logic Pro producers
+- featured tracks or battle highlights section
+- testimonials or community credibility section
+- FAQ and final CTA
+
+Functional expectations for the UI:
+- clear download area for official loop packs
+- clear upload/submission area for final Logic exports and project files
+- battle browsing interface
+- voting interface concepts
+- leaderboard display
+- producer profile previews
+- responsive design for desktop and mobile
+
+Technical requirements:
+- return a single complete HTML file
+- include all CSS in a style tag and all JavaScript in a script tag
+- make it responsive and visually impressive
+- use semantic HTML
+- do not use external image URLs; use gradients, abstract graphics, inline SVG, or CSS visuals instead
+- use Google Fonts for a distinctive typographic system
+- add tasteful animations and hover interactions
+
+The final result should feel like a premium, community-driven beat battle platform made specifically for Logic Pro producers.</textarea>
+
+          <div class="prompt-tools">
+            <div class="prompt-note">Tip: if you want, I can also turn this into a more advanced product-spec prompt or directly build the homepage itself.</div>
+            <div style="display:flex; gap:12px; flex-wrap:wrap;">
+              <button class="btn btn-primary" id="copyPrompt">Copy prompt</button>
+              <button class="btn btn-secondary" id="selectPrompt">Select text</button>
+            </div>
+          </div>
+        </div>
+      </div>
+    </section>
+  </main>
+
+  <footer class="footer">
+    <div class="wrap">
+      <strong>Logic Battle</strong> — prompt refinement for a Logic Pro producer battle platform.
+    </div>
+  </footer>
+
+  <script>
+    const reveals = document.querySelectorAll('.reveal');
+    const observer = new IntersectionObserver((entries) => {
+      entries.forEach(entry => {
+        if(entry.isIntersecting){
+          entry.target.classList.add('visible');
+          observer.unobserve(entry.target);
+        }
+      });
+    }, { threshold: 0.12 });
+
+    reveals.forEach(el => observer.observe(el));
+
+    const promptText = document.getElementById('promptText');
+    const copyPrompt = document.getElementById('copyPrompt');
+    const copyTop = document.getElementById('copyTop');
+    const selectPrompt = document.getElementById('selectPrompt');
+
+    async function copyText() {
+      try {
+        await navigator.clipboard.writeText(promptText.value);
+        const original = copyPrompt.textContent;
+        copyPrompt.textContent = 'Copied';
+        if (copyTop) copyTop.textContent = 'Copied prompt';
+        setTimeout(() => {
+          copyPrompt.textContent = original;
+          if (copyTop) copyTop.textContent = 'Copy prompt';
+        }, 1800);
+      } catch (e) {
+        promptText.select();
+      }
+    }
+
+    copyPrompt.addEventListener('click', copyText);
+    copyTop.addEventListener('click', copyText);
+    selectPrompt.addEventListener('click', () => {
+      promptText.focus();
+      promptText.select();
+    });
+  </script>
 </body>
 </html>

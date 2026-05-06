@@ -1,3 +1,20 @@
+<!doctype html><html lang="en"><head><meta charset="UTF-8"><meta name="viewport" content="width=device-width,initial-scale=1"><title>Logic Battle — Leaderboard</title><link rel="preconnect" href="https://fonts.googleapis.com"><link rel="preconnect" href="https://fonts.gstatic.com" crossorigin><link href="https://fonts.googleapis.com/css2?family=Space+Grotesk:wght@400;500;700&family=Bebas+Neue&display=swap" rel="stylesheet"><style>
+:root{--bg:#0b0f16;--panel:#121826;--line:#243049;--text:#eef3ff;--muted:#a8b5d1;--lime:#b7ff3c;--cyan:#62e8ff}
+*{box-sizing:border-box}body{margin:0;font-family:"Space Grotesk",sans-serif;background:linear-gradient(180deg,#090d14,#0f1522);color:var(--text)}
+a{text-decoration:none;color:inherit}.wrap{width:min(100% - 32px,1180px);margin:auto}
+nav{position:sticky;top:0;background:rgba(9,13,20,.85);backdrop-filter:blur(10px);border-bottom:1px solid var(--line);z-index:20}
+.nav{display:flex;justify-content:space-between;align-items:center;padding:14px 0;gap:12px}.links{display:flex;gap:12px;flex-wrap:wrap}
+.badge{padding:8px 12px;border-radius:999px;border:1px solid var(--line);background:#131c2c;color:var(--muted)}
+.btn{padding:12px 16px;border-radius:999px;border:1px solid var(--line);display:inline-block;background:#162034}
+.btn.primary{background:linear-gradient(135deg,var(--lime),#d7ff92);color:#0d1207;border:none;font-weight:700}
+header{padding:48px 0 22px}h1,h2,h3{font-family:"Bebas Neue",cursive;letter-spacing:.03em;margin:0 0 8px}
+h1{font-size:clamp(2.4rem,7vw,5rem)}h2{font-size:clamp(1.8rem,4vw,3rem)}
+.muted{color:var(--muted)}section{padding:20px 0 36px}.grid{display:grid;gap:16px;grid-template-columns:repeat(auto-fit,minmax(250px,1fr))}
+.card{background:linear-gradient(180deg,#131c2d,#111929);border:1px solid var(--line);padding:18px;border-radius:18px}
+.table{width:100%;border-collapse:collapse}.table th,.table td{padding:10px;border-bottom:1px solid var(--line);text-align:left}
+input,select,textarea{width:100%;padding:12px;border-radius:12px;border:1px solid var(--line);background:#0b1220;color:#fff}
+footer{padding:26px 0;color:var(--muted);border-top:1px solid var(--line);margin-top:18px}
+</style></head><body><nav><div class="wrap nav"><strong>Logic Battle</strong><div class="links"><a href="index.html">Home</a><a href="battles.html">Battles</a><a href="battle-detail.html">Battle Detail</a><a href="submit.html">Submit</a><a href="leaderboard.html">Leaderboard</a><a href="profiles.html">Producers</a><a href="about.html">About</a></div></div></nav><header><div class="wrap"><h1>Season Leaderboard</h1><p class="muted">Wins, voting score, and consistency rankings.</p></div></header><section><div class="wrap card"><table class="table"><thead><tr><th>#</th><th>Producer</th><th>Points</th><th>Wins</th><th>Consistency</th></tr></thead><tbody><tr><td>1</td><td>NovaKeys</td><td>2480</td><td>9</td><td>94%</td></tr><tr><td>2</td><td>808Mason</td><td>2330</td><td>8</td><td>91%</td></tr><tr><td>3</td><td>VelvetTape</td><td>2195</td><td>7</td><td>88%</td></tr><tr><td>4</td><td>AirGrid</td><td>2102</td><td>7</td><td>86%</td></tr></tbody></table></div></section><footer><div class="wrap">Logic Battle prototype modeled after beat-battle flow, adapted for Logic Pro-compatible submissions.</div></footer></body></html>
 <!DOCTYPE html>
 <html lang="en">
 <head>

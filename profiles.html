@@ -1,0 +1,27 @@
+<!doctype html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8"><meta name="viewport" content="width=device-width,initial-scale=1">
+  <title>Logic Battle — Producers</title>
+  <link rel="preconnect" href="https://fonts.googleapis.com"><link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=Inter:wght@400;600;800&display=swap" rel="stylesheet">
+  <style>
+    :root{--bg:#090c12;--panel:#121826;--line:#27344f;--text:#eef3ff;--muted:#a9b5d0;--accent:#7cff4f}
+    *{box-sizing:border-box}body{margin:0;font-family:Inter,sans-serif;background:var(--bg);color:var(--text)}a{text-decoration:none;color:inherit}
+    .wrap{width:min(100% - 32px,1200px);margin:auto}nav{position:sticky;top:0;background:rgba(9,12,18,.9);backdrop-filter:blur(8px);border-bottom:1px solid var(--line);z-index:20}
+    .nav{display:flex;justify-content:space-between;align-items:center;padding:14px 0;gap:12px}.links{display:flex;gap:14px;flex-wrap:wrap;color:var(--muted)}
+    .btn{padding:11px 14px;border-radius:10px;border:1px solid var(--line);background:#19253a;display:inline-block}.btn.primary{background:var(--accent);color:#071107;border:none;font-weight:700}
+    header{padding:54px 0 26px}.hero{display:grid;grid-template-columns:1.1fr .9fr;gap:20px}.card{background:linear-gradient(180deg,#121b2c,#101827);border:1px solid var(--line);border-radius:16px;padding:18px}
+    h1{font-size:clamp(2rem,6vw,4rem);line-height:1.05;margin:0 0 12px}h2{margin:0 0 8px}p{color:var(--muted)}
+    .stats{display:grid;grid-template-columns:repeat(3,1fr);gap:12px}.stat{background:#0f1727;border:1px solid var(--line);border-radius:12px;padding:12px}
+    .grid{display:grid;grid-template-columns:repeat(auto-fit,minmax(230px,1fr));gap:14px}section{padding:14px 0 30px}footer{padding:24px 0;color:var(--muted);border-top:1px solid var(--line)}
+    @media (max-width:900px){.hero{grid-template-columns:1fr}}
+  </style>
+</head>
+<body>
+<nav><div class="wrap nav"><strong>LOGIC BATTLE</strong><div class="links"><a href="battles.html">Battles</a><a href="leaderboard.html">Leaderboard</a><a href="profiles.html">Producers</a><a href="submit.html">Submit</a><a href="about.html">About</a></div></div></nav>
+<header><div class="wrap hero"><div class="card"><h1>Battle. Vote. Rank.<br>Built for Logic Pro.</h1><p>Explore competitor profiles and battle history.</p><p><a class="btn primary" href="battles.html">Producers</a> <a class="btn" href="submit.html">Submit Entry</a></p><div class="stats"><div class="stat"><strong>1,284</strong><br><small>Votes this round</small></div><div class="stat"><strong>342</strong><br><small>Active producers</small></div><div class="stat"><strong>24</strong><br><small>Hours left</small></div></div></div><div class="card"><h2>Current Battle: Soul Flip #42</h2><p>Download the official loop pack, produce in Logic Pro, and upload your bounce + project package before deadline.</p><ul><li>Pack: soul_flip_42.zip</li><li>Format: WAV 24-bit + .logicx/.zip</li><li>Deadline: May 20, 2026</li></ul><a class="btn" href="battle-detail.html">View Battle Details</a></div></div></header>
+<section><div class="wrap grid"><article class="card"><h2>How Battles Work</h2><p>1) Download same loops<br>2) Produce in Logic Pro<br>3) Submit files<br>4) Community vote</p></article><article class="card"><h2>Head-to-Head Voting</h2><p>Compare Producer A vs Producer B with quick switching and fair same-loop judging.</p></article><article class="card"><h2>Season Rankings</h2><p>Points, wins, and consistency update after each completed battle.</p></article><article class="card"><h2>Logic Compatibility</h2><p>Project files are required to be Logic compatible to keep workflows consistent.</p></article></div></section>
+<footer><div class="wrap">Logic Battle — beat-battle style experience adapted for Logic Pro creators.</div></footer>
+</body>
+</html>
